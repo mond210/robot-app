@@ -1,0 +1,27 @@
+const COLOR = {
+  white: "white",
+  black: "black",
+  primary: "primary",
+  primary_focus: "primary-focus",
+  primary_content: "primary-content",
+  secondary: "secondary",
+  secondary_focus: "secondary-focus",
+  secondary_content: "secondary-content",
+  tertiary: "tertiary",
+  tertiary_focus: "tertiary-focus",
+  tertiary_content: "tertiary-content",
+  neutral: "neutral",
+  neutral_focus: "neutral-focus",
+  neutral_content: "neutral-content",
+  info: "info",
+  info_content: "info-content",
+  success: "success",
+  success_content: "success-content",
+  warning: "warning",
+  warning_content: "warning-content",
+  error: "error",
+  error_content: "error-content",
+  default: "default",
+} as const;
+type COLOR = typeof COLOR[keyof typeof COLOR];
+export default COLOR;
